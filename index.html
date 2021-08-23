@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/bootstrap-theme.css" />
+		<title>Calculadora com Javascript</title>
+		<style type="text/css">
+			.msg-erro {
+				color: red;
+			}
+		</style>
+	</head>
+	<body class="container">
+		<h1 class="text-center">Calculadora Teste</h1>
+		<form class="form" name="formSignUp">
+			<div class="form-group">
+				<span id="msg_erro" name="msg_erro" class="msg-erro"></span>
+			</div>
+			<div class="form-group">
+				<label for="data">Número 1</label>
+				<input type="number" id="num1" class="form-control" />
+			</div>
+			<div class="form-group">
+				<label for="data">Número 2</label>
+				<input type="number" id="num2" class="form-control" />
+			</div>
+            <div class="form-group">
+                <label for="data">Resultado</label>
+                <input type="number" id="resp" class="form-control" />
+            </div>
+            <div>
+			<button class="btn btn-primary" type="button" onclick="soma()">
+				Somar
+			</button>
+            <button class="btn btn-primary" type="button" onclick="sub()">
+				Subtrair
+			</button>
+            <button class="btn btn-primary" type="button" onclick="mult()">
+				Multiplicar
+			</button>
+            <button class="btn btn-primary" type="button" onclick="divs()">
+				Dividir
+			</button>
+            </div>
+		</form>
+
+		<script type="text/javascript" src="js/interact.js"></script>
+    
+	</body>
+</html>
